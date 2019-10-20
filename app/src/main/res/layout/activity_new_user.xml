@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_new_user"
+    tools:context=".NewUserActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btn_login_via_facebook"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Login via Facebook"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="240dp"
+        android:layout_centerHorizontal="true"
+        android:background="#303F9F"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btn_login_via_google"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Login via Google"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="65dp"
+        android:layout_centerHorizontal="true"
+        android:background="#ff0138"
+        android:padding="10dp"
+        android:layout_alignTop="@+id/btn_login_via_facebook"
+        android:layout_below="@+id/btn_login_via_facebook"
+        />
+
+    <Button
+        android:id="@+id/btn_login_via_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Login via Email-ID"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="65dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:layout_alignTop="@+id/btn_login_via_google"
+        android:layout_below="@+id/btn_login_via_google"
+        />
+
+    <TextView
+        android:id="@+id/txt_view_dont_have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account!"
+        android:textSize="18sp"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="15sp"
+        android:layout_below="@+id/btn_login_via_email"
+        android:layout_alignLeft="@+id/btn_login_via_email"
+        android:layout_alignStart="@+id/btn_login_via_email" />
+
+    <TextView
+        android:id="@+id/txtView_registerA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_view_dont_have_account"
+        android:layout_alignStart="@+id/btn_login_via_email"
+        android:layout_below="@+id/btn_login_via_email"
+        android:layout_marginLeft="200sp"
+        android:layout_marginTop="34dp"
+        android:clickable="true"
+        android:text="@string/regster"
+        android:textSize="18sp" />
+
+</RelativeLayout>
